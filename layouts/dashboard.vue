@@ -19,6 +19,7 @@
           lg:hidden
         "
       ></div>
+ 
       <Sidebar :sidebarOpen="sidebarOpen" />
       <div class="flex-1 flex flex-col overflow-hidden">
         <Header :listItems="listItems" />

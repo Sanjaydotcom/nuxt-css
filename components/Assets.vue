@@ -1,28 +1,56 @@
  <template>
   <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
-    <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-      <div class="grid grid-cols-12 gap-2 py-3">
-        <div class="col-span-12 sm:col-span-3">
-          <input
-            type="text"
-            name="search"
-            id="search"
-            v-model="searchQuery"
-            placeholder="Enter your search here.."
-            autocomplete="given-name"
-            class="
-              mt-1
-              focus:ring-indigo-500 focus:border-indigo-500
-              block
-              w-full
-              shadow-sm
-              sm:text-sm
-              border-gray-300
-              rounded-md
-            "
-          />
+      <div class="grid grid-cols-12 gap-4 mt-3 py-3 pl-8">
+          <div class="col-span-12 md:col-span-6 lg:col-span-3">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              v-model="searchQuery"
+              placeholder="Enter your search here.."
+              autocomplete="given-name"
+              class="
+                mt-1
+                focus:ring-indigo-500 focus:border-indigo-500
+                block
+                w-full
+                shadow-sm
+                sm:text-sm
+                border-gray-300
+                rounded-md
+              "
+            />
+          </div>
+          <div class="col-span-12 self-end md:col-span-6 lg:col-span-3">
+          <button
+        type="button"
+        class="
+          inline-flex
+          items-center
+          px-4
+          py-2
+          border border-gray-300
+          rounded-md
+          shadow-sm
+          text-sm
+          font-medium
+          text-gray-700
+          bg-white
+          hover:bg-gray-50
+          focus:outline-none
+          focus:ring-2
+          focus:ring-offset-2
+          focus:ring-indigo-500
+        "
+        @click="toggleModal"
+      >
+        <!-- Heroicon name: solid/pencil -->
+
+        Add Assets
+      </button>
         </div>
-      </div>
+        </div>
+    <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
       <div
         class="
           overflow-hidden
@@ -31,6 +59,7 @@
           md:rounded-lg
         "
       >
+      
         <table class="min-w-full divide-y divide-gray-300">
           <thead class="bg-gray-50">
             <tr>
@@ -44,7 +73,7 @@
                   text-gray-900
                 "
               >
-                Emploee Id
+                Asset Type
               </th>
               <th
                 scope="col"
@@ -58,7 +87,7 @@
                   sm:pl-6
                 "
               >
-                Name
+                Asset Code
               </th>
               <th
                 scope="col"
@@ -70,7 +99,7 @@
                   text-gray-900
                 "
               >
-                Designation
+                Issue Date
               </th>
               <th
                 scope="col"
@@ -92,7 +121,7 @@
           <tbody class="divide-y divide-gray-200 bg-white">
             <tr v-for="item in filteredRows" :key="item.id">
               <td class="whitespace-nowrap px-3 py-3 text-sm text-gray-500">
-                {{ item.emplyeeId }}
+                {{ item.assetType }}
               </td>
 
               <td class="whitespace-nowrap py-3 pl-4 text-sm sm:pl-6">
@@ -105,15 +134,13 @@
                     />
                   </div>
                   <div class="ml-4">
-                    <div class="font-medium text-gray-900">{{ item.name }}</div>
-                    <div class="text-gray-500">lindsay.walton@example.com</div>
+                    <div class="font-medium text-gray-900">{{ item.code }}</div>
                   </div>
                 </div>
               </td>
 
               <td class="whitespace-nowrap px-3 py-3 text-sm text-gray-500">
-                <div class="text-gray-500">{{ item.designation }}</div>
-                <div class="text-gray-900">{{ item.department }}</div>
+                <div class="text-gray-500">{{ item.date }}</div>
               </td>
               <td class="whitespace-nowrap px-3 py-3 text-sm text-gray-500">
                 <span
@@ -144,88 +171,74 @@
                 "
               >
                 <a href="#" class="text-indigo-600 hover:text-indigo-900"
-                  >Edit<span class="sr-only">, Lindsay Walton</span></a
-                >
+                  >Edit<span class="sr-only"></span
+                ></a>
               </td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+ <AddAssets :toggleModal="toggleModal" v-if="showmodal" />
+
   </div>
 </template>
 
 <script>
 export default {
-  name: "Employees",
+  name: "Assets",
   data() {
     return {
       searchQuery: "",
+      showmodal: false,
       listItems: [
         {
           id: 1,
-          emplyeeId: "EMP00001",
-          name: "Sanjay",
-          department: "Tech",
+          assetType: "Asset One",
+          code: "AC100",
+          date: "12/02/2020",
           status: "Active",
-          designation: "Team Leader",
         },
         {
           id: 2,
-          emplyeeId: "EMP00002",
-          name: "Bhagath",
-          department: "Accounts",
+          assetType: "Asset two",
+          code: "AC100",
+          date: "08/04/2020",
           status: "Active",
-          designation: "Accounts Manger",
         },
         {
           id: 3,
-          emplyeeId: "EMP00003",
-          name: "Ajit",
-          department: "Finance",
+          assetType: "Asset three",
+          code: "AC100",
+          date: "20/07/2021",
           status: "Active",
-          designation: "Fianance Manger",
         },
         {
           id: 4,
-          emplyeeId: "EMP00001",
-          name: "Sharaf",
-          department: "Tech",
+          assetType: "Asset four",
+          code: "AC100",
+          date: "17/09/2021",
           status: "Active",
-          designation: "Team Leader",
         },
         {
           id: 5,
-          emplyeeId: "EMP00002",
-          name: "Arun",
-          department: "Accounts",
+          assetType: "Asset five",
+          code: "AC100",
+          date: "28/02/2019",
           status: "Active",
-          designation: "Accounts Manger",
-        },
-        {
-          id: 6,
-          emplyeeId: "EMP00003",
-          name: "Ibrahim",
-          department: "Finance",
-          status: "Active",
-          designation: "Fianance Manger",
-        },
-        {
-          id: 7,
-          emplyeeId: "EMP00001",
-          name: "Sanjay",
-          department: "Tech",
-          status: "Active",
-          designation: "Team Leader",
         },
       ],
     };
   },
-  methods: {},
+  methods: {
+     async toggleModal() {
+      this.showmodal = !this.showmodal;
+    },
+  },
   computed: {
     filteredRows() {
       return this.listItems.filter((row) => {
-        const employees = row.name.toString().toLowerCase();
+        const employees = row.assetType.toString().toLowerCase();
         const searchTerm = this.searchQuery.toLowerCase();
 
         return employees.includes(searchTerm);

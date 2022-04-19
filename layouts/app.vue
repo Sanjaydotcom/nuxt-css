@@ -229,12 +229,58 @@
         "
       >
         <div class="flex items-center flex-shrink-0 px-4">
-          <!-- <img
+          <img
             class="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
+            src="https://www.theheavyliftgroup.com/sites/default/files/2018-05/css-group-logo-png.png"
             alt="Workflow"
-          /> -->
-          <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">CSS</h2>
+          />
+          <h2
+            class="
+              text-2xl
+              px-3
+              leading-7
+              text-gray-700
+              sm:text-3xl sm:truncate
+            "
+          >
+            CSS
+          </h2>
+        </div>
+        <div class="py-4">
+          <div
+            class="
+              relative
+              mx-3
+              my-rounded-lg
+              rounded-md
+              bg-gray-100
+              px-6
+              py-5
+              shadow-sm
+              flex
+              items-center
+              space-x-3
+              hover:border-gray-200
+              focus-within:ring-2
+              focus-within:ring-offset-2
+              focus-within:ring-pink-500
+            "
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-10 w-10 rounded-full"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <a href="#" class="focus:outline-none">
+                <span class="absolute inset-0" aria-hidden="true"></span>
+                <p class="text-sm font-medium text-gray-900">Ricardo Cooper</p>
+                <p class="text-sm text-gray-500 truncate">Finance Manager</p>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="mt-5 flex-grow flex flex-col">
           <nav class="flex-1 px-2 pb-4 space-y-1">

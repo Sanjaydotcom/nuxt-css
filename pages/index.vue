@@ -3,7 +3,7 @@
   <div class="bg-white lg:w-3/12 md:6/12 w-10/12 m-auto my-28 shadow-md">
     <div class="py-8 px-8 rounded-xl">
       <Notification :message="error" v-if="error" />
-     
+
       <h1 class="font-medium text-2xl mt-3 text-center">Login</h1>
       <form action="" class="mt-6" method="post" @submit.prevent="login">
         <div class="my-5 text-sm">
@@ -45,7 +45,7 @@
             placeholder="Password"
           />
           <div class="flex justify-end mt-2 text-xs text-gray-600">
-            <a href="../../pages/auth/forget_password.html hover:text-black"
+            <a href="#"
               >Forget Password?</a
             >
           </div>
@@ -70,7 +70,7 @@
 
       <p class="mt-12 text-xs text-center font-light text-gray-400">
         Don't have an account?
-        <NuxtLink to="../auth/register" class="text-black font-medium">
+        <NuxtLink to="/" class="text-black font-medium">
           Create One
         </NuxtLink>
       </p>
