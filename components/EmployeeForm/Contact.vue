@@ -2,7 +2,7 @@
   <div>
     <div class="grid grid-cols-12 gap-2 px-3 pt-3">
       <div class="col-span-6 sm:col-span-3">
-        <label for="first-name" class="block text-sm font-medium text-gray-700"
+        <label for="first-name" class="block text-sm font-medium text-gray-600"
           >Primary Contact Number</label
         >
         <input
@@ -13,7 +13,7 @@
           autocomplete="given-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -25,7 +25,7 @@
       </div>
 
       <div class="col-span-6 sm:col-span-3">
-        <label for="last-name" class="block text-sm font-medium text-gray-700"
+        <label for="last-name" class="block text-sm font-medium text-gray-600"
           >Secondary Contact Number</label
         >
         <input
@@ -36,7 +36,7 @@
           autocomplete="family-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -50,7 +50,7 @@
       <div class="col-span-6 sm:col-span-3">
         <label
           for="date-of-birth"
-          class="block text-sm font-medium text-gray-700"
+          class="block text-sm font-medium text-gray-600"
           >Company Mail</label
         >
         <input
@@ -61,7 +61,7 @@
           autocomplete="given-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -73,7 +73,7 @@
       </div>
 
       <div class="col-span-6 sm:col-span-3">
-        <label for="nationality" class="block text-sm font-medium text-gray-700"
+        <label for="nationality" class="block text-sm font-medium text-gray-600"
           >Personal Mail</label
         >
         <input
@@ -84,7 +84,7 @@
           autocomplete="family-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -109,13 +109,13 @@
           shadow-sm
           text-sm
           font-medium
-          text-gray-700
+          text-gray-600
           bg-white
           hover:bg-gray-50
           focus:outline-none
           focus:ring-2
           focus:ring-offset-2
-          focus:ring-indigo-500
+          focus:ring-indigo-400
         "
         @click="goBack"
       >
@@ -136,13 +136,13 @@
           shadow-sm
           text-sm
           font-medium
-          text-gray-700
+          text-gray-600
           bg-white
           hover:bg-gray-50
           focus:outline-none
           focus:ring-2
           focus:ring-offset-2
-          focus:ring-indigo-500
+          focus:ring-indigo-400
         "
         @click="nextStep"
       >

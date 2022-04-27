@@ -5,7 +5,7 @@
         <div class="col-span-6 sm:col-span-3">
           <label
             for="first-name"
-            class="block text-sm font-medium text-gray-700"
+            class="block text-sm font-medium text-gray-600"
             >Company Name
           </label>
           <input
@@ -16,7 +16,7 @@
             autocomplete="given-name"
             class="
               mt-1
-              focus:ring-indigo-500 focus:border-indigo-500
+              focus:ring-indigo-400 focus:border-indigo-400
               block
               w-full
               shadow-sm
@@ -28,7 +28,7 @@
         </div>
 
         <div class="col-span-6 sm:col-span-3">
-          <label for="last-name" class="block text-sm font-medium text-gray-700"
+          <label for="last-name" class="block text-sm font-medium text-gray-600"
             >Designation</label
           >
           <input
@@ -39,7 +39,7 @@
             autocomplete="family-name"
             class="
               mt-1
-              focus:ring-indigo-500 focus:border-indigo-500
+              focus:ring-indigo-400 focus:border-indigo-400
               block
               w-full
               shadow-sm
@@ -52,7 +52,7 @@
         <div class="col-span-6 sm:col-span-2">
           <label
             for="blood-group"
-            class="block text-sm font-medium text-gray-700"
+            class="block text-sm font-medium text-gray-600"
             >Experience</label
           >
           <select
@@ -69,7 +69,7 @@
               bg-white
               rounded-md
               shadow-sm
-              focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+              focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
               sm:text-sm
             "
           >
@@ -80,7 +80,7 @@
         <div class="col-span-6 sm:col-span-2">
           <label
             for="date-of-birth"
-            class="block text-sm font-medium text-gray-700"
+            class="block text-sm font-medium text-gray-600"
             >Salary</label
           >
           <input
@@ -91,7 +91,7 @@
             autocomplete="given-name"
             class="
               mt-1
-              focus:ring-indigo-500 focus:border-indigo-500
+              focus:ring-indigo-400 focus:border-indigo-400
               block
               w-full
               shadow-sm
@@ -117,20 +117,21 @@
               text-sm
               font-medium
               rounded-md
+              border-gray-300
               text-gray-600
               bg-white
               hover:bg-grey-700
               focus:outline-none
               focus:ring-2
               focus:ring-offset-2
-              focus:ring-indigo-500
+              focus:ring-indigo-400
             "
           >
             Add More
           </button>
         </div>
       </div>
-        <div class="flex justify-end px-2">
+        <div class="flex justify-end px-2  pt-2">
      <button
         type="button"
         class="
@@ -144,13 +145,13 @@
           shadow-sm
           text-sm
           font-medium
-          text-gray-700
+          text-gray-600
           bg-white
           hover:bg-gray-50
           focus:outline-none
           focus:ring-2
           focus:ring-offset-2
-          focus:ring-indigo-500
+          focus:ring-indigo-400
         "
         @click="goBack"
       >     Back</button
@@ -166,13 +167,13 @@
           shadow-sm
           text-sm
           font-medium
-          text-gray-700
+          text-gray-600
           bg-white
           hover:bg-gray-50
           focus:outline-none
           focus:ring-2
           focus:ring-offset-2
-          focus:ring-indigo-500
+          focus:ring-indigo-400
         "
         @click="nextStep"
       >

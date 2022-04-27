@@ -2,7 +2,7 @@
   <div>
     <div class="grid grid-cols-12 gap-2 px-3 pt-2">
       <div class="col-span-6 sm:col-span-3">
-        <label for="first-name" class="block text-sm font-medium text-gray-700"
+        <label for="first-name" class="block text-sm font-medium text-gray-600"
           >First name</label
         >
         <input
@@ -13,7 +13,7 @@
           autocomplete="given-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -25,7 +25,7 @@
       </div>
 
       <div class="col-span-6 sm:col-span-3">
-        <label for="last-name" class="block text-sm font-medium text-gray-700"
+        <label for="last-name" class="block text-sm font-medium text-gray-600"
           >Last name</label
         >
         <input
@@ -36,7 +36,7 @@
           autocomplete="family-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -47,7 +47,7 @@
         />
       </div>
       <div class="col-span-6 sm:col-span-2">
-        <label for="country" class="block text-sm font-medium text-gray-700"
+        <label for="country" class="block text-sm font-medium text-gray-600"
           >Gender</label
         >
         <select
@@ -64,7 +64,7 @@
             bg-white
             rounded-md
             shadow-sm
-            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+            focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
             sm:text-sm
           "
         >
@@ -76,7 +76,7 @@
       <div class="col-span-6 sm:col-span-2">
         <label
           for="date-of-birth"
-          class="block text-sm font-medium text-gray-700"
+          class="block text-sm font-medium text-gray-600"
           >Date of Birth</label
         >
         <input
@@ -87,7 +87,7 @@
           autocomplete="given-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -99,7 +99,7 @@
         />
       </div>
       <div class="col-span-6 sm:col-span-2">
-        <label for="blood-group" class="block text-sm font-medium text-gray-700"
+        <label for="blood-group" class="block text-sm font-medium text-gray-600"
           >Blood group</label
         >
         <select
@@ -116,7 +116,7 @@
             bg-white
             rounded-md
             shadow-sm
-            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+            focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
             sm:text-sm
           "
         >
@@ -127,7 +127,7 @@
       <div class="col-span-6 sm:col-span-2">
         <label
           for="martial-status"
-          class="block text-sm font-medium text-gray-700"
+          class="block text-sm font-medium text-gray-600"
           >Martial Status</label
         >
         <select
@@ -144,7 +144,7 @@
             bg-white
             rounded-md
             shadow-sm
-            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+            focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
             sm:text-sm
           "
         >
@@ -154,7 +154,7 @@
         </select>
       </div>
       <div class="col-span-6 sm:col-span-3">
-        <label for="nationality" class="block text-sm font-medium text-gray-700"
+        <label for="nationality" class="block text-sm font-medium text-gray-600"
           >Nationality</label
         >
         <input
@@ -165,7 +165,7 @@
           autocomplete="family-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -176,7 +176,7 @@
         />
       </div>
     </div>
-    <div class="flex justify-end px-2">
+    <div class="flex justify-end px-2 pt-2">
       <button
         type="button"
         class="
@@ -188,14 +188,15 @@
           rounded-md
           shadow-sm
           text-sm
+        
           font-medium
-          text-gray-700
+          text-gray-600
           bg-white
           hover:bg-gray-50
           focus:outline-none
           focus:ring-2
           focus:ring-offset-2
-          focus:ring-indigo-500
+          focus:ring-indigo-400
         "
         @click="nextStep"
       >

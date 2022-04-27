@@ -109,7 +109,7 @@
               Current: "text-gray-500", Default: "text-gray-400 group-hover:text-gray-500"
             -->
               <svg
-                class="text-gray-500 mr-4 flex-shrink-0 h-6 w-6"
+                class="text-indigo-700 mr-4 flex-shrink-0 h-6 w-6"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -263,7 +263,7 @@
               hover:border-gray-200
               focus-within:ring-2
               focus-within:ring-offset-2
-              focus-within:ring-pink-500
+              focus-within:ring-indigo-400
             "
           >
             <div class="flex-shrink-0">
@@ -419,7 +419,7 @@
             focus:outline-none
             focus:ring-2
             focus:ring-inset
-            focus:ring-indigo-500
+            focus:ring-indigo-400
             md:hidden
           "
         >
@@ -510,7 +510,7 @@
                 focus:outline-none
                 focus:ring-2
                 focus:ring-offset-2
-                focus:ring-indigo-500
+                focus:ring-indigo-400
               "
             >
               <span class="sr-only">View notifications</span>
@@ -547,7 +547,7 @@
                     focus:outline-none
                     focus:ring-2
                     focus:ring-offset-2
-                    focus:ring-indigo-500
+                    focus:ring-indigo-400
                   "
                   id="user-menu-button"
                   aria-expanded="false"
@@ -604,7 +604,7 @@
       </div>
 
       <main class="flex-1">
-        <div class="py-2">
+        <div class="py-1">
           <Nuxt />
           <!-- /End replace -->
         </div>

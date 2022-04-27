@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div v-on:click="$emit('openModal')" v-if="!passportDetails.passportNo">
+    <div v-on:click="$emit('openModal')" v-if="!visaDetails.visaNo">
       <label for="date-of-birth" class="block text-sm font-medium text-gray-600"
-        >Passport No</label
+        >Current Visa</label
       >
       <input
         type="text"
         name="date-of-birth"
-        placeholder="Passport No"
+        placeholder="Visa No"
         id="date-of-birth"
         autocomplete="given-name"
         class="
@@ -22,9 +22,9 @@
         "
       />
     </div>
-    <div v-if="passportDetails.passportNo !== ''">
+    <div v-if="visaDetails.visaNo !== ''">
       <div
-      @click="removePassport()"
+      @click="removeVisa()"
         class="
           relative
           mx-3
@@ -67,9 +67,9 @@
           <a href="#" class="focus:outline-none">
             <span class="absolute inset-0" aria-hidden="true"></span>
             <p class="text-sm font-medium text-gray-900">
-              {{ passportDetails.passportNo }}
+              {{ visaDetails.visaNo }}
             </p>
-            <p class="text-xs text-gray-500 truncate">Passport Details</p>
+            <p class="text-xs text-gray-500 truncate">Visa Details</p>
           </a>
         </div>
         <div class="flex-shrink-0">
@@ -106,16 +106,16 @@
 import Modal from "~/components/Modal";
 
 export default {
-  name: "PassportInput",
+  name: "VisaInput",
   components: {
     Modal,
   },
 
   props: {
-    passportDetails: {
+    visaDetails: {
       type: Object,
     },
-    removePassport: {
+    removeVisa: {
         type: Function
       }
     

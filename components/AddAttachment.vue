@@ -74,20 +74,20 @@
               class="text-lg leading-6 font-medium text-center text-gray-900"
               id="modal-title"
             >
-              Add Assets
+              Add Attachment
             </h3>
             <div class="grid grid-cols-12 px-4 pt-4 gap-2">
               <div class="col-span-12">
                 <label
                   for="asset-type"
                   class="block text-sm font-medium text-gray-700"
-                  >Asset Code</label
+                  >Document Type</label
                 >
                 <input
                   type="text"
                   name="first-name"
                   id="first-name"
-                  placeholder="Passport Number"
+                  placeholder="Document Type"
                   autocomplete="given-name"
                   class="
                     mt-1
@@ -101,47 +101,18 @@
                   "
                 />
               </div>
-              <div class="col-span-12">
-                <label
-                  for="blood-group"
-                  class="block text-sm font-medium text-gray-700"
-                  >Asset Type</label
-                >
-                <select
-                  id="blood-group"
-                  name="blood-group"
-                  autocomplete="martial-status"
-                  class="
-                    mt-1
-                    block
-                    w-full
-                    py-2
-                    px-3
-                    border border-gray-300
-                    bg-white
-                    rounded-md
-                    shadow-sm
-                    focus:outline-none
-                    focus:ring-indigo-400
-                    focus:border-indigo-400
-                    sm:text-sm
-                  "
-                >
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                </select>
-              </div>
+              
               <div class="col-span-12">
                 <label
                   for="last-name"
                   class="block text-sm font-medium text-gray-700"
-                  >Issue Date</label
+                  >Upload Document</label
                 >
                 <input
-                  type="date"
+                  type="file"
                   name="last-name"
                   id="last-name"
-                  placeholder="Issue Date"
+                  placeholder="Upload Document"
                   autocomplete="family-name"
                   class="
                     mt-1
@@ -155,36 +126,7 @@
                   "
                 />
               </div>
-              <div class="col-span-12">
-                <label
-                  for="blood-group"
-                  class="block text-sm font-medium text-gray-700"
-                  >Status</label
-                >
-                <select
-                  id="blood-group"
-                  name="blood-group"
-                  autocomplete="martial-status"
-                  class="
-                    mt-1
-                    block
-                    w-full
-                    py-2
-                    px-3
-                    border border-gray-300
-                    bg-white
-                    rounded-md
-                    shadow-sm
-                    focus:outline-none
-                    focus:ring-indigo-400
-                    focus:border-indigo-400
-                    sm:text-sm
-                  "
-                >
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                </select>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -255,7 +197,7 @@
 
 <script>
 export default {
-  name: "Modal",
+  name: "AddAttachment",
   props: ["toggleModal"],
 };
 </script>

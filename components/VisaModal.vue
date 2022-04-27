@@ -57,7 +57,7 @@
           align-bottom
           bg-white
           rounded-lg
-          px-2
+          px-4
           pt-5
           pb-4
           text-left
@@ -69,25 +69,26 @@
         "
       >
         <div>
-          <div class="mb-2 mt-2">
+          <div class="my-3">
             <h3
               class="text-lg leading-6 font-medium text-center text-gray-900"
               id="modal-title"
             >
-              Add Assets
+              VISA Details
             </h3>
             <div class="grid grid-cols-12 px-4 pt-4 gap-2">
               <div class="col-span-12">
                 <label
-                  for="asset-type"
+                  for="first-name"
                   class="block text-sm font-medium text-gray-700"
-                  >Asset Code</label
+                  >Visa Number</label
                 >
                 <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  placeholder="Passport Number"
+                  type="number"
+                  v-model="visaNo"
+                  name="passportNo"
+                  id="passportNo"
+                  placeholder="Visa Number"
                   autocomplete="given-name"
                   class="
                     mt-1
@@ -101,47 +102,19 @@
                   "
                 />
               </div>
-              <div class="col-span-12">
-                <label
-                  for="blood-group"
-                  class="block text-sm font-medium text-gray-700"
-                  >Asset Type</label
-                >
-                <select
-                  id="blood-group"
-                  name="blood-group"
-                  autocomplete="martial-status"
-                  class="
-                    mt-1
-                    block
-                    w-full
-                    py-2
-                    px-3
-                    border border-gray-300
-                    bg-white
-                    rounded-md
-                    shadow-sm
-                    focus:outline-none
-                    focus:ring-indigo-400
-                    focus:border-indigo-400
-                    sm:text-sm
-                  "
-                >
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                </select>
-              </div>
-              <div class="col-span-12">
+
+              <div class="col-span-12 ">
                 <label
                   for="last-name"
                   class="block text-sm font-medium text-gray-700"
-                  >Issue Date</label
+                  >Visa Expiry</label
                 >
                 <input
                   type="date"
-                  name="last-name"
-                  id="last-name"
-                  placeholder="Issue Date"
+                  v-model="expiryDate"
+                  name="expiryDate"
+                  id="expiryDate"
+                  placeholder="Passport Expiry"
                   autocomplete="family-name"
                   class="
                     mt-1
@@ -155,48 +128,42 @@
                   "
                 />
               </div>
-              <div class="col-span-12">
+               <div class="col-span-12">
                 <label
-                  for="blood-group"
+                  for="last-name"
                   class="block text-sm font-medium text-gray-700"
-                  >Status</label
+                  >Upload Visa Document</label
                 >
-                <select
-                  id="blood-group"
-                  name="blood-group"
-                  autocomplete="martial-status"
+                <input
+                  type="file"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Upload  Visa Document"
+                  autocomplete="family-name"
                   class="
                     mt-1
+                    focus:ring-indigo-400 focus:border-indigo-400
                     block
                     w-full
-                    py-2
-                    px-3
-                    border border-gray-300
-                    bg-white
-                    rounded-md
                     shadow-sm
-                    focus:outline-none
-                    focus:ring-indigo-400
-                    focus:border-indigo-400
                     sm:text-sm
+                    border-gray-300
+                    rounded-md
                   "
-                >
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                </select>
+                />
               </div>
             </div>
           </div>
         </div>
         <div
           class="
-            mt-5 mx-5
+            mt-5
             sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense
           "
         >
           <button
             type="button"
-            @click="toggleModal"
+            @click="saveForm"
             class="
               w-full
               inline-flex
@@ -255,7 +222,21 @@
 
 <script>
 export default {
-  name: "Modal",
+  name: "VisatModal",
   props: ["toggleModal"],
+  data() {
+    return {
+      expiryDate: "",
+      visaNo: null,
+    };
+  },
+  methods: {
+    async saveForm() {
+      this.$emit("addVisa", {
+        expiryDate: this.expiryDate,
+        visaNo: this.visaNo,
+      });
+    },
+  },
 };
 </script>

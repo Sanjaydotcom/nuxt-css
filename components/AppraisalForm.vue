@@ -89,7 +89,7 @@
                         py-3.5
                         text-left text-sm
                         font-semibold
-                        text-gray-900
+                        text-gray-600
                       "
                     >
                       Designation
@@ -102,7 +102,7 @@
                         pr-3
                         text-left text-sm
                         font-semibold
-                        text-gray-900
+                        text-gray-600
                         sm:pl-6
                       "
                     >
@@ -115,7 +115,7 @@
                         py-3.5
                         text-left text-sm
                         font-semibold
-                        text-gray-900
+                        text-gray-600
                       "
                     >
                       Amount
@@ -127,7 +127,7 @@
                         py-3.5
                         text-left text-sm
                         font-semibold
-                        text-gray-900
+                        text-gray-600
                       "
                     >
                       Date
@@ -139,7 +139,7 @@
                         py-3.5
                         text-left text-sm
                         font-semibold
-                        text-gray-900
+                        text-gray-600
                       "
                     >
                       Status
@@ -201,7 +201,7 @@
                   <div class="col-span-6">
                     <label
                       for="asset-type"
-                      class="block text-sm font-medium text-gray-700"
+                      class="block text-sm font-medium text-gray-600"
                       >Designation</label
                     >
                     <input
@@ -212,7 +212,7 @@
                       autocomplete="given-name"
                       class="
                         mt-1
-                        focus:ring-indigo-500 focus:border-indigo-500
+                        focus:ring-indigo-400 focus:border-indigo-400
                         block
                         w-full
                         shadow-sm
@@ -225,7 +225,7 @@
                   <div class="col-span-6">
                     <label
                       for="blood-group"
-                      class="block text-sm font-medium text-gray-700"
+                      class="block text-sm font-medium text-gray-600"
                       >Department</label
                     >
                     <select
@@ -243,8 +243,8 @@
                         rounded-md
                         shadow-sm
                         focus:outline-none
-                        focus:ring-indigo-500
-                        focus:border-indigo-500
+                        focus:ring-indigo-400
+                        focus:border-indigo-400
                         sm:text-sm
                       "
                     >
@@ -255,7 +255,7 @@
                      <div class="col-span-6">
                     <label
                       for="blood-group"
-                      class="block text-sm font-medium text-gray-700"
+                      class="block text-sm font-medium text-gray-600"
                       >Branch</label
                     >
                     <select
@@ -273,8 +273,8 @@
                         rounded-md
                         shadow-sm
                         focus:outline-none
-                        focus:ring-indigo-500
-                        focus:border-indigo-500
+                        focus:ring-indigo-400
+                        focus:border-indigo-400
                         sm:text-sm
                       "
                     >
@@ -285,7 +285,7 @@
                     <div class="col-span-6">
                     <label
                       for="blood-group"
-                      class="block text-sm font-medium text-gray-700"
+                      class="block text-sm font-medium text-gray-600"
                       >Type of Appraisal</label
                     >
                     <select
@@ -303,8 +303,8 @@
                         rounded-md
                         shadow-sm
                         focus:outline-none
-                        focus:ring-indigo-500
-                        focus:border-indigo-500
+                        focus:ring-indigo-400
+                        focus:border-indigo-400
                         sm:text-sm
                       "
                     >
@@ -315,7 +315,7 @@
                   <div class="col-span-6">
                     <label
                       for="last-name"
-                      class="block text-sm font-medium text-gray-700"
+                      class="block text-sm font-medium text-gray-600"
                       >Date of Appraisal</label
                     >
                     <input
@@ -326,7 +326,7 @@
                       autocomplete="family-name"
                       class="
                         mt-1
-                        focus:ring-indigo-500 focus:border-indigo-500
+                        focus:ring-indigo-400 focus:border-indigo-400
                         block
                         w-full
                         shadow-sm
@@ -339,7 +339,7 @@
                   <div class="col-span-6">
                     <label
                       for="blood-group"
-                      class="block text-sm font-medium text-gray-700"
+                      class="block text-sm font-medium text-gray-600"
                       >Amount</label
                     >
                     <input
@@ -350,7 +350,7 @@
                       autocomplete="given-name"
                       class="
                         mt-1
-                        focus:ring-indigo-500 focus:border-indigo-500
+                        focus:ring-indigo-400 focus:border-indigo-400
                         block
                         w-full
                         shadow-sm
@@ -373,7 +373,7 @@
         >
           <button
             type="button"
-            @click="toggleModal"
+            @click="saveForm"
             class="
               w-full
               inline-flex
@@ -391,7 +391,7 @@
               focus:outline-none
               focus:ring-2
               focus:ring-offset-2
-              focus:ring-indigo-500
+              focus:ring-indigo-400
               sm:col-start-2 sm:text-sm
             "
           >
@@ -413,12 +413,12 @@
               bg-white
               text-base
               font-medium
-              text-gray-700
+              text-gray-600
               hover:bg-gray-50
               focus:outline-none
               focus:ring-2
               focus:ring-offset-2
-              focus:ring-indigo-500
+              focus:ring-indigo-400
               sm:mt-0 sm:col-start-1 sm:text-sm
             "
           >
@@ -433,6 +433,6 @@
 <script>
 export default {
   name: "AppraisalForm",
-  props: ["toggleModal"],
+  props: ["toggleModal","saveForm"],
 };
 </script>

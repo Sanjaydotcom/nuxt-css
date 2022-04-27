@@ -92,7 +92,7 @@
                   autocomplete="given-name"
                   class="
                     mt-1
-                    focus:ring-indigo-500 focus:border-indigo-500
+                    focus:ring-indigo-400 focus:border-indigo-400
                     block
                     w-full
                     shadow-sm
@@ -103,7 +103,7 @@
                 />
               </div>
 
-              <div class="col-span-12 3">
+              <div class="col-span-12 ">
                 <label
                   for="last-name"
                   class="block text-sm font-medium text-gray-700"
@@ -118,7 +118,31 @@
                   autocomplete="family-name"
                   class="
                     mt-1
-                    focus:ring-indigo-500 focus:border-indigo-500
+                    focus:ring-indigo-400 focus:border-indigo-400
+                    block
+                    w-full
+                    shadow-sm
+                    sm:text-sm
+                    border-gray-300
+                    rounded-md
+                  "
+                />
+              </div>
+               <div class="col-span-12">
+                <label
+                  for="last-name"
+                  class="block text-sm font-medium text-gray-700"
+                  >Upload Passport Document</label
+                >
+                <input
+                  type="file"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Upload  Passport Document"
+                  autocomplete="family-name"
+                  class="
+                    mt-1
+                    focus:ring-indigo-400 focus:border-indigo-400
                     block
                     w-full
                     shadow-sm
@@ -157,7 +181,7 @@
               focus:outline-none
               focus:ring-2
               focus:ring-offset-2
-              focus:ring-indigo-500
+              focus:ring-indigo-400
               sm:col-start-2 sm:text-sm
             "
           >
@@ -184,7 +208,7 @@
               focus:outline-none
               focus:ring-2
               focus:ring-offset-2
-              focus:ring-indigo-500
+              focus:ring-indigo-400
               sm:mt-0 sm:col-start-1 sm:text-sm
             "
           >

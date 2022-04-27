@@ -74,115 +74,40 @@
               class="text-lg leading-6 font-medium text-center text-gray-900"
               id="modal-title"
             >
-              Add Assets
+              Switch Status
             </h3>
             <div class="grid grid-cols-12 px-4 pt-4 gap-2">
               <div class="col-span-12">
                 <label
                   for="asset-type"
-                  class="block text-sm font-medium text-gray-700"
-                  >Asset Code</label
-                >
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  placeholder="Passport Number"
-                  autocomplete="given-name"
-                  class="
-                    mt-1
-                    focus:ring-indigo-400 focus:border-indigo-400
-                    block
-                    w-full
-                    shadow-sm
-                    sm:text-sm
-                    border-gray-300
-                    rounded-md
-                  "
-                />
-              </div>
-              <div class="col-span-12">
-                <label
-                  for="blood-group"
-                  class="block text-sm font-medium text-gray-700"
-                  >Asset Type</label
+                  class="block text-sm font-medium text-gray-600"
+                  >Employee Status</label
                 >
                 <select
-                  id="blood-group"
-                  name="blood-group"
-                  autocomplete="martial-status"
+                  id="tabs"
+                  name="tabs"
                   class="
-                    mt-1
                     block
                     w-full
+                    pl-3
+                    pr-10
                     py-2
-                    px-3
-                    border border-gray-300
-                    bg-white
-                    rounded-md
-                    shadow-sm
+                    text-base
+                    border-gray-300
                     focus:outline-none
                     focus:ring-indigo-400
                     focus:border-indigo-400
                     sm:text-sm
-                  "
-                >
-                  <option>Option 1</option>
-                  <option>Option 2</option>
-                </select>
-              </div>
-              <div class="col-span-12">
-                <label
-                  for="last-name"
-                  class="block text-sm font-medium text-gray-700"
-                  >Issue Date</label
-                >
-                <input
-                  type="date"
-                  name="last-name"
-                  id="last-name"
-                  placeholder="Issue Date"
-                  autocomplete="family-name"
-                  class="
-                    mt-1
-                    focus:ring-indigo-400 focus:border-indigo-400
-                    block
-                    w-full
-                    shadow-sm
-                    sm:text-sm
-                    border-gray-300
                     rounded-md
                   "
-                />
-              </div>
-              <div class="col-span-12">
-                <label
-                  for="blood-group"
-                  class="block text-sm font-medium text-gray-700"
-                  >Status</label
                 >
-                <select
-                  id="blood-group"
-                  name="blood-group"
-                  autocomplete="martial-status"
-                  class="
-                    mt-1
-                    block
-                    w-full
-                    py-2
-                    px-3
-                    border border-gray-300
-                    bg-white
-                    rounded-md
-                    shadow-sm
-                    focus:outline-none
-                    focus:ring-indigo-400
-                    focus:border-indigo-400
-                    sm:text-sm
-                  "
-                >
-                  <option>Option 1</option>
-                  <option>Option 2</option>
+                  <option>Active</option>
+                  <option>In Active</option>
+                  <option>Suspended</option>
+                  <option>Left</option>
+                  <option>Absconding</option>
+                  <option>Terminated</option>
+                  <option>Serving Notice Period</option>
                 </select>
               </div>
             </div>
@@ -190,7 +115,8 @@
         </div>
         <div
           class="
-            mt-5 mx-5
+            mt-5
+            mx-5
             sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense
           "
         >
@@ -236,7 +162,7 @@
               bg-white
               text-base
               font-medium
-              text-gray-700
+              text-gray-600
               hover:bg-gray-50
               focus:outline-none
               focus:ring-2
@@ -255,7 +181,7 @@
 
 <script>
 export default {
-  name: "Modal",
+  name: "ChangeStatusModal",
   props: ["toggleModal"],
 };
 </script>

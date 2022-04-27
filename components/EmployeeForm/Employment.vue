@@ -3,7 +3,7 @@
 
     <div class="grid grid-cols-12 gap-2 px-3 pt-3">
       <div class="col-span-6 sm:col-span-3">
-        <label for="first-name" class="block text-sm font-medium text-gray-700"
+        <label for="first-name" class="block text-sm font-medium text-gray-600"
           >Designation</label
         >
         <input
@@ -14,7 +14,7 @@
           autocomplete="given-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -25,7 +25,7 @@
         />
       </div>
       <div class="col-span-6 sm:col-span-3">
-        <label for="blood-group" class="block text-sm font-medium text-gray-700"
+        <label for="blood-group" class="block text-sm font-medium text-gray-600"
           >Branch</label
         >
         <select
@@ -42,7 +42,7 @@
             bg-white
             rounded-md
             shadow-sm
-            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+            focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
             sm:text-sm
           "
         >
@@ -51,7 +51,7 @@
         </select>
       </div>
       <div class="col-span-6 sm:col-span-2">
-        <label for="blood-group" class="block text-sm font-medium text-gray-700"
+        <label for="blood-group" class="block text-sm font-medium text-gray-600"
           >Division</label
         >
         <select
@@ -68,7 +68,7 @@
             bg-white
             rounded-md
             shadow-sm
-            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+            focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
             sm:text-sm
           "
         >
@@ -77,7 +77,7 @@
         </select>
       </div>
       <div class="col-span-6 sm:col-span-2">
-        <label for="blood-group" class="block text-sm font-medium text-gray-700"
+        <label for="blood-group" class="block text-sm font-medium text-gray-600"
           >Department</label
         >
         <select
@@ -94,7 +94,7 @@
             bg-white
             rounded-md
             shadow-sm
-            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+            focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
             sm:text-sm
           "
         >
@@ -103,7 +103,7 @@
         </select>
       </div>
       <div class="col-span-6 sm:col-span-2">
-        <label for="blood-group" class="block text-sm font-medium text-gray-700"
+        <label for="blood-group" class="block text-sm font-medium text-gray-600"
           >Reporting Manager</label
         >
         <select
@@ -120,7 +120,7 @@
             bg-white
             rounded-md
             shadow-sm
-            focus:outline-none focus:ring-indigo-500 focus:border-indigo-500
+            focus:outline-none focus:ring-indigo-400 focus:border-indigo-400
             sm:text-sm
           "
         >
@@ -129,7 +129,7 @@
         </select>
       </div>
       <div class="col-span-6 sm:col-span-2">
-        <label for="last-name" class="block text-sm font-medium text-gray-700"
+        <label for="last-name" class="block text-sm font-medium text-gray-600"
           >Date of Joining</label
         >
         <input
@@ -138,7 +138,7 @@
           id="last-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -150,7 +150,7 @@
       </div>
 
       <div class="col-span-6 sm:col-span-2">
-        <label for="last-name" class="block text-sm font-medium text-gray-700"
+        <label for="last-name" class="block text-sm font-medium text-gray-600"
           >Year of Service</label
         >
         <input
@@ -161,7 +161,7 @@
           autocomplete="family-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -175,7 +175,7 @@
       <div class="col-span-6 sm:col-span-2">
         <label
           for="date-of-birth"
-          class="block text-sm font-medium text-gray-700"
+          class="block text-sm font-medium text-gray-600"
           >Gross Salary</label
         >
         <input
@@ -186,7 +186,7 @@
           autocomplete="given-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -198,7 +198,7 @@
       </div>
 
       <div class="col-span-6 sm:col-span-2">
-        <label for="nationality" class="block text-sm font-medium text-gray-700"
+        <label for="nationality" class="block text-sm font-medium text-gray-600"
           >Allowance</label
         >
         <input
@@ -209,7 +209,7 @@
           autocomplete="family-name"
           class="
             mt-1
-            focus:ring-indigo-500 focus:border-indigo-500
+            focus:ring-indigo-400 focus:border-indigo-400
             block
             w-full
             shadow-sm
@@ -234,13 +234,13 @@
           shadow-sm
           text-sm
           font-medium
-          text-gray-700
+          text-gray-600
           bg-white
           hover:bg-gray-50
           focus:outline-none
           focus:ring-2
           focus:ring-offset-2
-          focus:ring-indigo-500
+          focus:ring-indigo-400
         "
         @click="goBack"
       >       Back</button
@@ -256,13 +256,13 @@
           shadow-sm
           text-sm
           font-medium
-          text-gray-700
+          text-gray-600
           bg-white
           hover:bg-gray-50
           focus:outline-none
           focus:ring-2
           focus:ring-offset-2
-          focus:ring-indigo-500
+          focus:ring-indigo-400
         "
         @click="nextStep"
       >
